@@ -37,6 +37,7 @@ header hgroup {
     top: 15%;
     left: 10%;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 header h1 {
