@@ -68,7 +68,21 @@ header h3 {
     font-size: 3rem;
     text-align: center;
     /* text-shadow przesunięcie boki, przesunięcie góra-dół, rozmycie, kolor */
-    text-shadow: 0 -20px 0 black;
+    text-shadow: 0 -15px 0 black, 0 -30px 0 black;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+#arrow:hover {
+    text-shadow: 0 -15px 0 white, 0 -30px 0 white;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    animation: arrow 1.4s infinite linear;
 }
 
 main {
@@ -111,5 +125,19 @@ main {
 
     header hgroup {
         transform: rotate(-15deg);
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(80px);
     }
 }
