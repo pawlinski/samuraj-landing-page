@@ -149,9 +149,7 @@ main {
 
 @media (min-width: 530px) and (orientation: portrait) {}
 
-@media (min-width: 768px) {}
-
-@media (min-width: 768px) and (orientation: portrait) {
+@media (min-width: 768px) {
     header img {
         height: 75%;
         right: -30%;
@@ -169,6 +167,8 @@ main {
         top: 8%
     }
 }
+
+@media (min-width: 768px) and (orientation: portrait) {}
 
 @media (min-width: 1024px) {
     header img {
