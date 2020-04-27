@@ -37,6 +37,7 @@ header nav {
     top: 4%;
     right: 7%;
     font-size: 3rem;
+    z-index: 1;
 }
 
 header hgroup {
@@ -196,11 +197,39 @@ main {
 
 @media (min-width: 1024px) and (orientation: portrait) {}
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    header img {
+        height: 90%;
+        right: -5%;
+    }
+}
 
 @media (min-width: 1280px) and (orientation: portrait) {}
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+    header img {
+        height: 100%;
+        right: 0%;
+    }
+
+    header h1 {
+        font-size: 12rem;
+    }
+
+    header h3 {
+        font-size: 4.8rem
+    }
+
+    /* wstawienie "entera" po span */
+    h3 span::after {
+        content: '\A';
+        white-space: pre;
+    }
+
+    header hgroup {
+        top: 20%
+    }
+}
 
 @media (min-width: 1600px) and (orientation: portrait) {}
 
